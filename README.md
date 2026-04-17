@@ -17,6 +17,10 @@ Ce projet est un site vitrine moderne pour un restaurant, réalisé dans le cadr
 
 
 ## 📸 Aperçu
+![Version Ordinateur](images/preview-desktop.png)
+![Version Tablette](images/preview-tablet.png)
+![Version Mobile](images/preview-mobile.png)
+
 https://parisha778.github.io/Resto/
 
 ---
