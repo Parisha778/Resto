@@ -13,6 +13,17 @@
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 
     <style>
+      
+  .container {
+      max-width: 1140px; 
+      margin-left: auto !important;
+      margin-right: auto !important;
+  }
+
+  .img-fluid {
+      max-height: 70vh; 
+      object-fit: cover;
+  }
       *{
             margin: 0;
             padding: 0;
@@ -22,7 +33,7 @@
 
 
         .navbar-brand{
-            background-color: rgba 41,44,135,0.2;
+            background-color: white;
             font-size: 28px;
             opacity: 0.7;
             background-image: linear-gradient(144deg,#ece5ed 10.5%,#534361c0 90%); 
@@ -62,8 +73,7 @@
         }
 
         .img-fluid{
-          width: 600px;
-          height: 450px;
+          
         }
 
         .footer{
@@ -73,111 +83,152 @@
         background-color: black;
             
        }
-       .icon{
-        
-        height: 40px;
-        width: auto;
-        margin-bottom: 30px;
-        cursor: pointer;    
-       }
 
-  @media screen and (min-width:465px){
-    iframe {
-        width: 400px;
-        height:400px;
-    }
-  }
- 
+      .icon-blanc {
+          filter: brightness(0) invert(1);
+          width: 30px; 
+          height: auto;
+          cursor: pointer; 
+          transition: 0.3s; 
+      }
+      .icon-blanc:hover {
+          filter: brightness(0) invert(0.8) sepia(1) hue-rotate(30deg);
+      }
+        @media screen and (min-width:465px){
+        }
+      
     </style>
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid ">  
-          <a class="navbar-brand" href="#">Comptoir du Marché</a> 
+          <img class="d-block w-10" src="images/logo.jpg" alt="Logo" style="width: 100px; height: auto;">
         </div>
-      </nav>
-  <div class="container px-4 text-center ">
-  <div class="row gx-5">
-    <div class="col-sm-8">
-      <div class="p-2">
-        <img class="img-fluid" src="images/img4.jpg" alt="">
+    </nav>
+  <div class="container px-4 my-5"> <div class="row gx-5 align-items-center justify-content-center">
+        
+        <div class="col-12 col-lg-6">
+          <div class="p-2">
+          <img class="img-fluid rounded-4 shadow-sm mx-auto d-block w-100" src="images/img4.jpg" alt="Comptoir">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5 mt-4 mt-lg-0">
+        <div class="p-2 text-center text-lg-start"> <p class="fs-5"> This is the secondy. These classes control the overall appearance...
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit enim possimus.
+          </p>
+          <strong class="d-block mt-3">Se trouve à l'angle en face du parc, Bonne ambiance</strong>
+        </div>
+        </div>
+
       </div>
-    </div>
-    <div class="col">
-      <div class="p-2">This is the second item's accordion body.This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via <strong> Se trouve à l'ongle en face du parc, Bonne ambiance</strong>.s.</div>
-    </div>
-  </div>
-</div>   
-  
- <div class="container px-4 text-center ">
-  <div class="row gx-5">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit cumque repellat tenetur voluptatem beatae quibusdam odio modi. Deserunt recusandae suscipit quo. Fugit earum voluptates, voluptatibus optio neque distinctio asperiores!
-  </div>
   </div>
 
-<div class="container px-4 text-center">
-  <div class="row gx-5">
-    <div class="col-sm-6">
-      <div class="p-3">
-        <img class="img-fluid" src="images/img3.jpg" alt="">
-      </div>
+<div class="container px-4 my-5">
+  <div class="row gx-4 justify-content-center">
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img class="img-fluid rounded-4 w-100" src="images/img3.jpg" alt="Intérieur 1">
     </div>
+    <div class="col-12 col-md-6">
+        <img class="img-fluid rounded-4 w-100" src="images/img6.jpg" alt="Intérieur 2">
+    </div>
+  </div>
+</div>
+<div class="container px-4 text-center" style="margin-top: 50px;">
+  <div class="row gx-5">
     <div class="col">
-      <div class="p-2">
-        <img class="img-fluid image3"  src="images/img6.jpg" alt="">
-      </div>
+       <h2>
+        Soirée Jazz et Pianno inoubliable
+      </h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit cumque repellat tenetur voluptatem beatae quibusdam odio modi. Deserunt recusandae suscipit quo.
+      </p>
+    </div>
+  </div>
+
+<div class="row justify-content-center" style="padding-top:40px;">
+  <div class="col-12 col-md-10 col-lg-8">
+    <div class="ratio ratio-16x16"> <video class="rounded shadow w-100" autoplay loop muted playsinline>
+        <source src="images/JAZZ.MOV" type="video/quicktime">
+        <source src="images/JAZZ.MOV" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
     </div>
   </div>
 </div>
   
+<h3 class="text-center mt-5 mb-4 fw-bold">Adresse</h3>
+
 <div class="container px-4 text-center">
-  <div class="row gx-5">
-   
-  <div class="container px-4 text-center " style="margin-top: -10px;">
-  <div class="row gx-5">
-    <span style="font-weight: bold;">Soirée Jazz et Pianno inoubliable</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit cumque repellat tenetur voluptatem beatae quibusdam odio modi. Deserunt recusandae suscipit quo. Fugit earum voluptates, voluptatibus optio neque Deserunt recusandae suscipit quodistinctio asperiores!
-  </div>
-  </div>
-
-  <div  style= "padding-top:80px;">
-   <video src="" width="860px" height="480px" autoplay loop muted ></video>
-  </div>
-  
-
-    <h5 style="margin-top: 70px " >Adresse</h5>
-  <div class="container px-4 text-center" style="margin-top: 36px;">
-  <div class="row gx-5">
+  <div class="row gx-5 align-items-center">
     
-    <div class="col">
-      <div class="p-3"> 11 Bis Avenue Verdier, 92120 Montrouge,est situé à montrouge juste à en face du parc... as well as the showing and hiding via .</div>
-    </div>
-  
-    <div class="col">
-      
-      <div class="p-2">
-       
-      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5254.5576744541995!2d2.3193216!3d48.814741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671003ae24c79%3A0x4bbe20982643c44!2sCOMPTOIR%20DU%20MARCHE!5e0!3m2!1sen!2sfr!4v1748700460012!5m2!1sen!2sfr" width="500" height="400" style="border-radius: 4%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <div class="p-4 border rounded-4 shadow-sm bg-light">
+        <p class="fs-5">
+          <strong>11 Bis Avenue Verdier, 92120 Montrouge</strong>
+        </p>
+        <p class="text-muted">
+          Le restaurant est situé à Montrouge, juste en face du parc. 
+          Un emplacement idéal pour profiter d'un moment paisible.
+        </p>
       </div>
     </div>
+  
+    <div class="col-12 col-md-6">
+      <div class="ratio ratio-4x3 shadow-sm">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.53123456789!2d2.315!3d48.816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCoEJpcyBBdi4gVmVyZGllciwgOTIxMjAgTW9udHJvdWdl!5e0!3m2!1sfr!2sfr!4v123456789" 
+          style="border-radius: 20px; border: 0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
   </div>
-</div> 
+</div>
 
 </body>
-<footer style=" padding-bottom: 30px;">
- <div class="container px-4 text-center">
-  <div class="flex">
-      <p class="" style="font-weight: bold;">Nous suivez </p>
+<footer class="bg-grey text-white pt-5 pb-4 mt-5">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Comptoir du Marché</h5>
+        <p>Une expérience culinaire unique au cœur de Montrouge, face au parc.</p>
       </div>
-      <div class="" style="text-justify: auto;"> 
-      <img src="images/instagram.png" alt="https://www.instagram.com/comptoir.du.marche/#" class="icon">
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Nous suivre</h5>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <a href="https://www.instagram.com/comptoir.du.marche/#" class="text-white text-decoration-none">
+            <img src="images/instagram.png" alt="Instagram" class="icon icon-blanc" style="width: 30px; height: auto;">
+            <span>Instagram</span>
+          </a>
+        </div>
       </div>
-     <div>
-       <p style="font-weight: bold;">Nous Appellez : 08 78 98 98 98</p> 
-     </div>
-       
-      
-  </div> 
+
+     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+  
+  <div class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+    <i class="fas fa-phone me-3 icon-blanc"></i>
+    <span>01 78 98 98 98</span>
+  </div>
+
+  <div class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+    <i class="fas fa-envelope me-3 icon-blanc"></i>
+    <span class="text-break">contact@comptoirdumarche.fr</span>
+  </div>
 </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-12 text-center">
+        <hr>
+        <p class="small">© 2026 Copyright: <strong>Comptoir du Marché</strong></p>
+      </div>
+    </div>
+  </div>
 </footer>
 </html>
